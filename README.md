@@ -142,6 +142,7 @@ Commercial use requires a separate agreement.
 ### 💼 Commercial / Closed-source use
 - Internal company use
 - SaaS products or any for-profit applications
+- **Government and public sector institutions** (including national research institutes, public agencies, etc.)
 - Requires a separate **Commercial License**
 
 For commercial licensing: leave a message on [Discussions](../../discussions)
