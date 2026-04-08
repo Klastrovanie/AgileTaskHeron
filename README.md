@@ -129,8 +129,8 @@ For commercial / closed-source use:
 | Up to 100 users / year | ~$17,448 | $3,500 |
 | Up to 200 users / year | ~$34,896 | $4,500 |
 | Enterprise (unlimited) | Custom | Custom quote |
-| Graph-based automatic team formation | ❌ | ✅ |
-| Automatic task priority ranking | ❌ | ✅ |
+| Graph-based automatic team formation | Not included | ✅ |
+| Automatic task priority ranking | Not included | ✅ |
 | Data privacy | Atlassian cloud | Your own server |
 | Infrastructure | Included | Your own (AWS, on-prem, etc.) |
 
