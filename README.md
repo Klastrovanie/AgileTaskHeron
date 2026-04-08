@@ -48,6 +48,19 @@ Weight Guidelines
 
 The weight is subjective — HR or Agile teams should assign values based on real business importance, past performance, and strategic priority.
 
+### Key Advantages
+
+Unlike deep learning-based team recommendation systems that require extensive historical data, long training periods, and periodic retraining whenever the organization changes, AgileTaskHeron is completely <b>training-free.</b>
+
+It is designed to work instantly using only your existing data:
+
+- <b>Leverages existing knowledge</b>: Team leaders’ performance reviews, past project evaluations, and domain expertise can be directly converted into edge weights.
+- <b>Instant Task Force creation</b>: As soon as a new task appears, the system can immediately generate optimized Task-Skill-Person bundles and priorities — no retraining needed.
+- <b>Truly Task-Oriented</b>: It explicitly calculates which tasks are most important and in what order they should be executed, rather than simply matching people to skills.
+- <b>High flexibility</b>: Users have full control to define and adjust edge weights based on business priorities, strategic importance, or real-world experience.
+
+This makes AgileTaskHeron particularly powerful for HR teams and Agile organizations that want fast, practical, and explainable results without the complexity and maintenance overhead of deep learning models.
+
 
 ## License
 
