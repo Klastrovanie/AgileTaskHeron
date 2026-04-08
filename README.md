@@ -53,7 +53,34 @@ In short, while the underlying algorithms are standard, the **combination, focus
 Other tools may use PageRank + Louvain for general network analysis, but none combine them in this specific way to solve **dynamic Agile Task Force formation**.
 
 ---
+## Why AgileTaskHeron?
 
+You already have an **AI team**.  
+You already have a **UI development team**.  
+You already have **GPU resources** (or can easily spin them up in the cloud).
+
+Yet you're still paying **~$8,724 per year** for Jira® Premium (50 users) — and sending your company's internal plans, strategic priorities, and sensitive data to a third-party cloud.
+
+Jira® is excellent for basic issue tracking.  
+Jira® AI is nice for writing summaries and suggestions.
+
+But neither of them can solve the real problem Agile teams face every sprint:
+
+**"Which tasks are truly the most important right now, and who should actually work together on them?"**
+
+AgileTaskHeron was built precisely for companies like yours.
+
+- Runs **entirely on your own infrastructure** — your data never leaves your control  
+- No training, no historical data required — works immediately with your existing knowledge  
+- Uses graph intelligence (PageRank + Louvain) to automatically create **optimal Task-Skill-Person bundles** and task priorities  
+- Gives you something Jira® AI still can't: real, actionable Agile team formation
+
+In short:  
+You don’t need another ticket system.  
+You need a **smart optimization engine** that actually makes your Agile delivery faster and smarter.
+
+**That’s what AgileTaskHeron is.**
+---
 ### Key Advantages
 
 Unlike deep learning-based team recommendation systems that require extensive historical data, long training periods, and periodic retraining whenever the organization changes, AgileTaskHeron is completely <b>training-free.</b>
