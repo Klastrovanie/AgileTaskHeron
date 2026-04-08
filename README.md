@@ -1,7 +1,7 @@
 # AgileTaskHeron
 
 **First Public Release:** 2026-04-08  
-**Last Updated:** 2026-04-08
+**Last Updated:** 2026-04-09
 
 Automated Agile Task Force Optimization using Heterogeneous Graphs
 
