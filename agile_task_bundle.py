@@ -14,8 +14,10 @@ def analyze_task_bundle(edges: cudf.DataFrame) -> Dict:
         edge_attr='weight'
     )
 
+    # PageRank
     pagerank_scores = cugraph.pagerank(G)
 
+    # Louvain 
     workgroup, _ = cugraph.louvain(G)
     workgroup = workgroup.merge(pagerank_scores, on='vertex', how='left')
 
@@ -29,6 +31,7 @@ def analyze_task_bundle(edges: cudf.DataFrame) -> Dict:
     }
 
     partition_labels = workgroup['partition'].unique().to_arrow().to_pylist()
+    
     for part in sorted(partition_labels):
         group = workgroup[workgroup['partition'] == part]
         
@@ -38,17 +41,29 @@ def analyze_task_bundle(edges: cudf.DataFrame) -> Dict:
         task_name = tasks[0]
         
         skills = group[group['vertex'].str.startswith('Skill')]['vertex'].to_pandas().tolist()
-        people = group[group['vertex'].str.startswith('Person')]['vertex'].to_pandas().tolist()
         
+        people_df = group[group['vertex'].str.startswith('Person')]
+        people_list = people_df['vertex'].to_pandas().tolist()
+        
+        person_details = []
+        people_pd = people_df.to_pandas()
+        for _, row in people_pd.iterrows():
+            person_details.append({
+                "person": row['vertex'],
+                "contribution": round(float(row['pagerank']), 4)
+            })
+
         task_score = float(group[group['vertex'] == task_name]['pagerank'].iloc[0])
-        
+
         result["priority_bundles"].append({
             "priority": len(result["priority_bundles"]) + 1,
             "task": task_name,
             "score": round(task_score, 4),
             "required_skills": skills,
-            "available_people": people,
-            "bundle_size": len(group)
+            "available_people": people_list,
+            "person_details": person_details,          # ← 새로 추가
+            "bundle_size": len(group),
+            "nodes": group['vertex'].to_pandas().tolist()
         })
 
     return result
@@ -64,8 +79,16 @@ if __name__ == "__main__":
     })
 
     result = analyze_task_bundle(edges)
-    print("=== Agile Task Bundle 결과 ===")
+    
+    print("=== Agile Task Bundle Results ===\n")
     for bundle in result["priority_bundles"]:
-        print(f"{bundle['priority']} Ranking ─ {bundle['task']} (importance {bundle['score']})")
-        print(f"   • Required Skills : {bundle['required_skills']}")
-        print(f"   • Human resources : {bundle['available_people']}")
+        print(f"{bundle['priority']} Ranking ─ {bundle['task']} (importance: {bundle['score']})")
+        print(f"   • Required Skills     : {bundle['required_skills']}")
+        print(f"   • Total Nodes         : {bundle['bundle_size']}")
+        print(f"   • Nodes               : {bundle['nodes']}")
+        print(f"   • Human Resources     :")
+        
+        for p in bundle['person_details']:
+            print(f"       - {p['person']:<10} (contribution: {p['contribution']})")
+        
+        print("-" * 70)
