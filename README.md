@@ -109,6 +109,35 @@ Commercial use requires a separate agreement.
 
 For commercial licensing: leave a message on [Discussions](../../discussions)
 
+
+## Pricing
+
+For commercial / closed-source use:
+
+| Users | Annual License |
+|-------|---------------|
+| up to 50 | $2,000 / year |
+| up to 100 | $3,500 / year |
+| up to 200 | $4,500 / year |
+| Enterprise (unlimited) | Custom quote |
+
+### Why AgileTaskHeron?
+
+| | Jira® Premium | AgileTaskHeron |
+|---|---|---|
+| Up to 50 users / year | ~$8,724 | $2,000 |
+| Up to 100 users / year | ~$17,448 | $3,500 |
+| Up to 200 users / year | ~$34,896 | $4,500 |
+| Enterprise (unlimited) | Custom | Custom quote |
+| Graph-based automatic team formation | ❌ | ✅ |
+| Automatic task priority ranking | ❌ | ✅ |
+| Data privacy | Atlassian cloud | Your own server |
+| Infrastructure | Included | Your own (AWS, on-prem, etc.) |
+
+> Jira® is a registered trademark of Atlassian Corporation.  
+> Pricing verified via official Atlassian pricing page, April 2026.
+
+
 ## Copyright
 
 Copyright © 2026 Klastrovanie Co., Ltd. All rights reserved.
