@@ -131,8 +131,18 @@ Searched across USPTO, EPO, WIPO, KIPRIS, and CNIPA via Google Patents, Espacene
 
 ## License
 
-AGPL v3 — free for research and non-commercial use.  
+AGPL v3 — free for research and non-commercial use.
+
+### ✅ Free to use (No license fee)
+- Personal use
+- Educational purposes (university courses, student projects, bootcamps, workshops, academic research)
+- Non-commercial research and open-source projects
+
 Commercial use requires a separate agreement.
+### 💼 Commercial / Closed-source use
+- Internal company use
+- SaaS products or any for-profit applications
+- Requires a separate **Commercial License**
 
 For commercial licensing: leave a message on [Discussions](../../discussions)
 
