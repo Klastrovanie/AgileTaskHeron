@@ -1,4 +1,8 @@
 # AgileTaskHeron
+
+**First Public Release:** 2026-04-08  
+**Last Updated:** 2026-04-08
+
 Automated Agile Task Force Optimization using Heterogeneous Graphs
 
 AgileTaskHeron is an intelligent graph engine that automatically **prioritizes tasks** and creates optimal **Task-Skill-Person bundles** for Agile teams.
