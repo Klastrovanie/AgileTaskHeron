@@ -92,6 +92,11 @@ Weight Guidelines
 The weight is subjective — HR or Agile teams should assign values based on real business importance, past performance, and strategic priority.
 
 
+## Prior Art
+
+To the best of our knowledge, no existing patent covers the combination of PageRank and Louvain community detection applied specifically to Agile Task Force formation via a Task-Skill-Person heterogeneous graph. (Verified via Google Patents search, April 2026)
+
+
 ## License
 
 AGPL v3 — free for research and non-commercial use.  
