@@ -22,15 +22,58 @@ Built with GPU acceleration (RAPIDS cuGraph + cuDF) for high performance.
 
 ---
 
+### What makes AgileTaskHeron unique?
+
+While **PageRank** and **Louvain community detection** are well-known algorithms used in many graph analysis tools, **AgileTaskHeron** is fundamentally different in purpose and design.
+
+**Key differentiators:**
+
+- **Task-centric heterogeneous graph**  
+  Most tools analyze general networks (social, knowledge, or organizational graphs).  
+  AgileTaskHeron is specifically designed around **Tasks** as the central node, connecting **Required Skills** and **Human Resources** in one unified graph.
+
+- **Task-first priority + natural bundle generation**  
+  It doesn’t just find communities or important nodes — it simultaneously calculates **which tasks should be done first** and automatically creates **ready-to-use Task-Skill-Person bundles**.
+
+- **No training required**  
+  Unlike deep learning or machine learning-based team recommendation systems, AgileTaskHeron works instantly using only your current data and edge weights. No historical dataset or retraining is needed.
+
+- **Full user control over edges and weights**  
+  You define every relationship and importance (weight) yourself. The algorithm respects your domain knowledge and business priorities completely.
+
+- **Built for real Agile / HR workflows**  
+  The output is not abstract graph metrics — it directly produces **Agile sprint priority + recommended task forces** that HR and Agile teams can use immediately.
+
+In short, while the underlying algorithms are standard, the **combination, focus on Tasks, and practical Agile application** make AgileTaskHeron unique.
+
+Other tools may use PageRank + Louvain for general network analysis, but none combine them in this specific way to solve **dynamic Agile Task Force formation**.
+
+---
+
+### Key Advantages
+
+Unlike deep learning-based team recommendation systems that require extensive historical data, long training periods, and periodic retraining whenever the organization changes, AgileTaskHeron is completely <b>training-free.</b>
+
+It is designed to work instantly using only your existing data:
+
+- <b>Leverages existing knowledge</b>: Team leaders’ performance reviews, past project evaluations, and domain expertise can be directly converted into edge weights.
+- <b>Instant Task Force creation</b>: As soon as a new task appears, the system can immediately generate optimized Task-Skill-Person bundles and priorities — no retraining needed.
+- <b>Truly Task-Oriented</b>: It explicitly calculates which tasks are most important and in what order they should be executed, rather than simply matching people to skills.
+- <b>High flexibility</b>: Users have full control to define and adjust edge weights based on business priorities, strategic importance, or real-world experience.
+
+This makes AgileTaskHeron particularly powerful for HR teams and Agile organizations that want fast, practical, and explainable results without the complexity and maintenance overhead of deep learning models.
+
+---
+
 ### 🚀 Quick Start
 
-# 1. Create environment
+#### 1. Create environment
 ```bash
 conda env create -f environment.yml
 conda activate rapids
 ```
 
-# 2. Run example
+#### 2. Run example
 ```bash  
 python agile_task_bundle.py
 ```
@@ -47,19 +90,6 @@ Weight Guidelines
 - 0.1 = slightly related
 
 The weight is subjective — HR or Agile teams should assign values based on real business importance, past performance, and strategic priority.
-
-### Key Advantages
-
-Unlike deep learning-based team recommendation systems that require extensive historical data, long training periods, and periodic retraining whenever the organization changes, AgileTaskHeron is completely <b>training-free.</b>
-
-It is designed to work instantly using only your existing data:
-
-- <b>Leverages existing knowledge</b>: Team leaders’ performance reviews, past project evaluations, and domain expertise can be directly converted into edge weights.
-- <b>Instant Task Force creation</b>: As soon as a new task appears, the system can immediately generate optimized Task-Skill-Person bundles and priorities — no retraining needed.
-- <b>Truly Task-Oriented</b>: It explicitly calculates which tasks are most important and in what order they should be executed, rather than simply matching people to skills.
-- <b>High flexibility</b>: Users have full control to define and adjust edge weights based on business priorities, strategic importance, or real-world experience.
-
-This makes AgileTaskHeron particularly powerful for HR teams and Agile organizations that want fast, practical, and explainable results without the complexity and maintenance overhead of deep learning models.
 
 
 ## License
