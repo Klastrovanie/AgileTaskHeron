@@ -128,7 +128,7 @@ The weight is subjective — HR or Agile teams should assign values based on rea
 To the best of our knowledge, no existing patent covers the specific combination of PageRank-based task priority ranking and Louvain community detection applied to a Task-Skill-Person heterogeneous graph for automated Agile Task Force formation.
 Searched across USPTO, EPO, WIPO, KIPRIS, and CNIPA via Google Patents, Espacenet, KIPRIS, and Patentscope. (April 2026)
 
-### Benchmark
+## Benchmark
 
 2000 persons, 50 tasks: Total Edges: 78,935  
 Took 1.9 sec on AWS g4dn.xlarge  
