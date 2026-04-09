@@ -151,8 +151,10 @@ Commercial use requires a separate agreement.
 - **Government and public sector institutions** (including national research institutes, public agencies, etc.)
 - Requires a separate **Commercial License**
 
-For commercial licensing: leave a message on [Discussions](../../discussions)
+**Special Note for SI Companies**  
+We welcome System Integrators (SI companies) who are interested in building a more cost-effective Jira-like solution or launching their own SaaS product using AgileTaskHeron. Commercial licensing and partnership opportunities are available.
 
+For commercial licensing, enterprise support, or partnership inquiries, please leave a message in [Discussions](../../discussions).
 
 ## Pricing
 
