@@ -131,7 +131,8 @@ Searched across USPTO, EPO, WIPO, KIPRIS, and CNIPA via Google Patents, Espacene
 ## Benchmark
 
 2000 persons, 50 tasks: Total Edges: 78,935  
-Took 1.9 sec on AWS g4dn.xlarge  
+Took 1.9 sec on AWS g4dn.xlarge   
+On-demand price: ~$0.526/hour — a weekly sprint run costs less than **$0.01**.  
 See more from practical-example.ipynb
 
 ## License
