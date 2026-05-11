@@ -180,6 +180,12 @@ For commercial / closed-source use:
 | Data privacy | Atlassian cloud | Your own server |
 | Infrastructure | Included | Your own (AWS, on-prem, etc.) |
 
+> **Note:** The Core Engine License is intended for teams that already have their own internal UI, DevOps, and integration capabilities.
+>
+> The prices above apply to the **Core Engine License only**.
+>
+> For teams that need a ready-to-deploy, self-hosted AgileTaskHeron system, including Docker deployment, web dashboard, enterprise connectors, or on-premise integration support, please contact us for the **Professional Docker Edition** or **Enterprise Edition**.
+
 > Jira® is a registered trademark of Atlassian Corporation.  
 > Pricing verified via official Atlassian pricing page, April 2026.
 
